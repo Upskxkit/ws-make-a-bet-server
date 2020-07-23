@@ -1,0 +1,32 @@
+{
+  "name": "make-a-bet-server",
+  "version": "1.0.0",
+  "description": "BE for workshop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "WS",
+    "BE",
+    "KOA",
+    "KOA-server",
+    "innovecs",
+    "ws-make-a-bet"
+  ],
+  "author": "Mykyta Shteinikov",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "nodemon": "^2.0.4",
+    "prettier": "2.0.5"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "config": "^3.3.1",
+    "koa": "^2.13.0",
+    "socket.io": "^2.3.0"
+  }
+}
