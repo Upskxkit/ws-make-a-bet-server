@@ -1,8 +1,13 @@
 {
-  "SERVER": {
-    "PORT": 3000
+  "server": {
+    "port": 3000
   },
-  "CLIENT": {
-    "URL": "http://127.0.0.1:5000"
+  "client": {
+    "url": "http://127.0.0.1:5000"
+  },
+  "db": {
+    "name": "make-a-bet",
+    "user": "upsk",
+    "password": "Vitrenko1993"
   }
 }

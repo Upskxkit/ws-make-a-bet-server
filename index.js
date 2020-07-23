@@ -1,10 +1,12 @@
 "use strict";
 const config = require("config");
-const port = config.SERVER.PORT || 5000;
+const {start,stop} = require("./config/db.js");
+const port = config.server.port || 5000;
 const RestAPI = require("./api/rest");
 const JsonRPC = require("./api/rpc");
 
 async function main() {
+  await start();
   const server = RestAPI.start(port);
   await JsonRPC.start(server);
 }
@@ -33,6 +35,7 @@ main().catch((err) => {
 
 //Graceful shutdown
 async function shutdown() {
+  await stop();
   await RestAPI.stop();
   await JsonRPC.stop();
 }
