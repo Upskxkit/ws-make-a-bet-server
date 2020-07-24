@@ -2,8 +2,8 @@
 const config = require("config");
 const {start,stop} = require("./config/db.js");
 const port = config.server.port || 5000;
-const RestAPI = require("./api/rest");
-const JsonRPC = require("./api/rpc");
+const RestAPI = require("./lib/api/rest");
+const JsonRPC = require("./lib/api/rpc");
 
 async function main() {
   await start();

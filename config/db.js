@@ -1,7 +1,7 @@
 'use strict'
 
 const env = process.env.NODE_ENV || 'development'
-const knexfile = require('../db/knexfile')
+const knexfile = require('../lib/db/knexfile')
 const knex = require('knex');
 let db;
 
