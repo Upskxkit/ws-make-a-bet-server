@@ -1,12 +1,12 @@
 "use strict";
 const config = require("config");
-const {start,stop} = require("./config/db.js");
+const db = require("./lib/db/mongoConnector");
 const port = config.server.port || 5000;
 const RestAPI = require("./lib/api/rest");
 const JsonRPC = require("./lib/api/rpc");
 
 async function main() {
-  await start();
+  await db.connect();
   const server = RestAPI.start(port);
   await JsonRPC.start(server);
 }
@@ -35,7 +35,7 @@ main().catch((err) => {
 
 //Graceful shutdown
 async function shutdown() {
-  await stop();
+  await db.disconnect();
   await RestAPI.stop();
   await JsonRPC.stop();
 }

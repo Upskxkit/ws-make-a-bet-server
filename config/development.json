@@ -5,9 +5,8 @@
   "client": {
     "url": "http://127.0.0.1:5000"
   },
-  "db": {
-    "name": "make-a-bet",
-    "user": "upsk",
-    "password": "Vitrenko1993"
+  "MONGODB": {
+    "DATABASE": "cms",
+    "URL": "mongodb://127.0.0.1:27017/auc"
   }
 }
