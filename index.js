@@ -1,6 +1,8 @@
 "use strict";
 const config = require("config");
 const db = require("./lib/db/mongoConnector");
+console.dir(config);
+console.log(process.env.splice(1));
 const port = config.server.port || 5000;
 const RestAPI = require("./lib/api/rest");
 const JsonRPC = require("./lib/api/rpc");
