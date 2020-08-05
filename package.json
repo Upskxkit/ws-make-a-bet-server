@@ -30,5 +30,8 @@
     "koa": "^2.13.0",
     "mongoose": "^5.9.25",
     "socket.io": "^2.3.0"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }
