@@ -1,0 +1,9 @@
+{
+  "server": {
+    "port": 3000
+  },
+  "MONGODB": {
+    "DATABASE": "auc",
+    "URL": "mongodb+srv://workshopUser2020:DTZUwJzj00UZy3NR@cluster0.qq8ps.mongodb.net/auc?retryWrites=true&w=majority"
+  }
+}
